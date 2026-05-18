@@ -2,7 +2,7 @@ project_id       = "dev-project-489706"
 region           = "asia-south1"
 database_version = "MYSQL_8_0"
 env              = "dev"
-gke_num_nodes    = 3
+gke_num_nodes    = 2
 gke_machine_type = "e2-standard-2"
 db_tier          = "db-f1-micro"
 

@@ -14,7 +14,7 @@ variable "env" {
 }
 
 variable "database_version" {
-  description = "The database version (e.g., POSTGRES_15)"
+  description = "The database version (e.g., MYSQL_8_0)"
   type        = string
 }
 
