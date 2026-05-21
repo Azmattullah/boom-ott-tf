@@ -40,7 +40,7 @@ resource "google_sql_database_instance" "primary" {
 }
 
 resource "google_sql_database" "database" {
-  name     = var.db_name
+  name     = "boom_ott_db"
   instance = google_sql_database_instance.primary.name
   project  = var.project_id
 }
@@ -51,7 +51,7 @@ resource "random_password" "db_password" {
 }
 
 resource "google_sql_user" "users" {
-  name     = "boom_ott_app_user"
+  name     = "boom_ott_admin"
   instance = google_sql_database_instance.primary.name
   password = random_password.db_password.result
   project  = var.project_id

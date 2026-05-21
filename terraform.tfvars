@@ -9,5 +9,5 @@ db_tier          = "db-f1-micro"
 gke_disk_size_gb = 30
 gke_disk_type    = "pd-ssd"
 
-db_disk_size_gb = 50
+db_disk_size_gb = 30
 db_disk_type    = "pd-ssd"
