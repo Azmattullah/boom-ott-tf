@@ -32,6 +32,7 @@ output "argocd_initial_admin_password_command" {
   description = "Run this command to get the initial admin password for ArgoCD"
 }
 
+/*
 # ==============================================================================
 # Cloud SQL Outputs
 # ==============================================================================
@@ -45,6 +46,7 @@ output "database_private_ip" {
   value       = module.sql.private_ip
   description = "The private IP address of the Cloud SQL instance"
 }
+*/
 
 # ==============================================================================
 # App Ingress Outputs (After ArgoCD syncs)

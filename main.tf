@@ -32,6 +32,7 @@ module "gke" {
   depends_on         = [module.network]
 }
 
+/*
 # Cloud SQL Module
 module "sql" {
   source           = "./modules/sql"
@@ -54,6 +55,7 @@ module "secret_manager" {
   env         = var.env
   db_password = module.sql.db_password
 }
+*/
 
 data "google_client_config" "default" {}
 
